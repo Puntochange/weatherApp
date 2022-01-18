@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Ubuntu', sans-serif;
+   letter-spacing: 0.4px;
+   background: #ece9e6;
+   background: linear-gradient(to bottom, #ffffff, #ece9e6);
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+input {
+   border: none;
+}
