@@ -34,7 +34,7 @@ const icons = [
 function render(data) {
    const img = icons.find(el => el.code.split(' ').find(code => code == data.current.condition.code)).img
    wrapper.innerHTML = `
-      <form><input type="text" placeholder="Поиск"/></form>
+      <form><input type="text" placeholder="Поиск" autofocus/></form>
       <h2 class="city">${data.location.name}</h2>
       <span class="type">${data.current.condition.text}</span>
       <img src='${img}' alt="icon" />
