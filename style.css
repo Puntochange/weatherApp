@@ -1,24 +1,56 @@
 *,
 *::after,
 *::before {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-   font-family: 'Ubuntu', sans-serif;
-   letter-spacing: 0.4px;
-   background: #ece9e6;
-   background: linear-gradient(to bottom, #ffffff, #ece9e6);
+	font-family: "Ubuntu", sans-serif;
+	letter-spacing: 0.4px;
+	color: #fff;
+	background: #ece9e6;
+	background: linear-gradient(to bottom, #ffffff, #ece9e6);
 }
 .wrapper {
-   overflow: hidden;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 input {
-   border: none;
+	border: none;
+	width: 225px;
+	color: #ffffff;
+	left: calc(50% - 225px / 2);
+	padding: 8px 12px;
+	font-size: 1.2em;
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255, 0.275);
+	font-weight: 500;
+	transition: 0.155s;
+}
+
+input:focus {
+	background-color: rgba(150, 150, 150, 0.375);
+	outline: none;
+}
+
+img {
+	width: 140px;
+}
+
+.city {
+	margin: 40px 0 6px;
+	font-size: 2em;
+}
+
+.type {
+	font-size: 1.2em;
+}
+
+.temperature {
+	font-size: 2.5em;
 }
